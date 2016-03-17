@@ -1,9 +1,9 @@
 import UIKit
 
 /// Iconfont extension to UIImage.
-extension UIImage {
+public extension UIImage {
 
-  static func iconfont(content: String, familyName: String, size: CGFloat, color: UIColor = UIColor.blackColor()) -> UIImage {
+  public static func iconfont(content: String, familyName: String, size: CGFloat, color: UIColor = UIColor.blackColor()) -> UIImage {
     let paragraph = NSMutableParagraphStyle()
     paragraph.alignment = .Center
 

@@ -24,9 +24,9 @@ private class Path {
    - UIFont.register("Assets/Fonts/FontAwesome.otf")
    - UIFont.register("Assets/Fonts/FontAwesome.otf", bundle: NSBundle(forClass: YourClass.self))
  */
-extension UIFont {
+public extension UIFont {
 
-  static func register(path: String, bundle: NSBundle = NSBundle.mainBundle()) {
+  public static func register(path: String, bundle: NSBundle = NSBundle.mainBundle()) {
 
     struct Static {
       static var onceToken: dispatch_once_t = 0
