@@ -8,7 +8,6 @@ class IconfontTests: XCTestCase {
   let bundle = NSBundle(forClass: IconfontTests.self)
 
   func testFontRegistration() {
-    XCTAssertTrue(UIFont.fontNamesForFamilyName("FontAwesome").isEmpty, "Should be True")
     UIFont.register(fontPath, bundle: bundle)
     XCTAssertFalse(UIFont.fontNamesForFamilyName("FontAwesome").isEmpty, "Should be False")
   }
