@@ -1,28 +1,28 @@
+import UIKit
 import XCTest
 @testable import Iconfont
 
 class IconfontTests: XCTestCase {
 
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  let fontPath = "Assets/Fonts/FontAwesome.otf"
+  let bundle = NSBundle(forClass: IconfontTests.self)
+
+  func testFontRegistration() {
+    XCTAssertTrue(UIFont.fontNamesForFamilyName("FontAwesome").isEmpty, "Should be True")
+    UIFont.register(fontPath, bundle: bundle)
+    XCTAssertFalse(UIFont.fontNamesForFamilyName("FontAwesome").isEmpty, "Should be False")
   }
 
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
+  func testCreateUIFont() {
+    UIFont.register(fontPath, bundle: bundle)
+    let font = UIFont(name: "FontAwesome", size: 233)
+    XCTAssertNotNil(font, "Shold not be nil")
   }
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-  }
-
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measureBlock {
-      // Put the code you want to measure the time of here.
-    }
+  func testUIImageExtension() {
+    UIFont.register(fontPath, bundle: bundle)
+    let img = UIImage.iconfont("\u{f09b}", familyName: "FontAwesome", size: 666)
+    XCTAssertTrue(img.size.width == 666.0, "Should be True")
   }
 
 }

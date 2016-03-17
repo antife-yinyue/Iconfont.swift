@@ -12,6 +12,7 @@
 		1C016E681C9A4B47005CC298 /* IconfontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C016E671C9A4B47005CC298 /* IconfontTests.swift */; };
 		1C15963A1C9A916B0099FCED /* FontRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1596381C9A916B0099FCED /* FontRegistration.swift */; };
 		1C15963B1C9A916B0099FCED /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1596391C9A916B0099FCED /* ImageExtension.swift */; };
+		1C15963D1C9A92610099FCED /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1C15963C1C9A92610099FCED /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		1C016E691C9A4B47005CC298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C1596381C9A916B0099FCED /* FontRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRegistration.swift; sourceTree = "<group>"; };
 		1C1596391C9A916B0099FCED /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		1C15963C1C9A92610099FCED /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		1C016E661C9A4B47005CC298 /* IconfontTests */ = {
 			isa = PBXGroup;
 			children = (
+				1C15963C1C9A92610099FCED /* Assets */,
 				1C016E671C9A4B47005CC298 /* IconfontTests.swift */,
 				1C016E691C9A4B47005CC298 /* Info.plist */,
 			);
@@ -190,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C15963D1C9A92610099FCED /* Assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
